@@ -15,7 +15,7 @@ Redlining <- chredlin[, col_order]
 
 #UI portion
 ui <- fluidPage(
-  titlePanel("Relationship Between Housing Prices and Various Factors"),
+  titlePanel("Relationship Between Housing Insurance and Various Factors"),
   sidebarLayout(
     sidebarPanel(
       selectInput("variable", "Factor:",
