@@ -1,4 +1,4 @@
-# 824FinalProject
+# 824 Final Project
 This app is used to consider a multitude of factors that impact a household’s ability to receive insurance for their homes in Chicago. 
 
 The factors of consideration are: 
