@@ -27,7 +27,8 @@ ui <- fluidPage(
     ),
     mainPanel(
       h3(textOutput("caption")),
-      plotOutput("rcPlot")
+      plotOutput("rcPlot"),
+      plotOutput("bPlot")
     )
   )
 )
@@ -44,7 +45,12 @@ server <- function(input, output) {
   output$rcPlot <- renderPlot({
     plot(as.formula(formulaText()),
             data = Redlining,
-            col = "#75AADB", pch = 19)
+            col = "lightblue", pch = 19)
+  })
+  output$bPlot <- renderPlot({
+    boxplot(get(input$variable),
+         data = Redlining,
+         col = "darkred")
   })
   
 }
